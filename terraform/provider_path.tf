@@ -16,6 +16,3 @@ $ANSIBLE_VAULT;1.1;AES256
 EOF
 }
 
-output "raw_string" {
-  value = data.ansiblevault_string.raw_string.value
-}

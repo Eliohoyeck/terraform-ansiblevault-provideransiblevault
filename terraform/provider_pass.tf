@@ -1,7 +1,3 @@
-variable "vault_pass" {
-  type    = string
-  default = "secret"
-}
 
 #  See https://github.com/MeilleursAgents/terraform-provider-ansiblevault/blob/master/README.md for installation and usage
 provider "ansiblevault" {
@@ -31,14 +27,3 @@ EOF
   key       = "API_KEY"
 }
 
-output "path" {
-  value = data.ansiblevault_path.path.value
-}
-
-output "env" {
-  value = data.ansiblevault_env.env.value
-}
-
-output "key_string" {
-  value = data.ansiblevault_string.key_string.value
-}
